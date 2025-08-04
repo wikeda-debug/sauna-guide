@@ -4,32 +4,30 @@
   <meta charset="UTF-8">
   <title>サウナの使い方</title>
   <style>
-    body {
-      font-family: sans-serif;
+    html, body {
       margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
     }
+
     h1 {
       text-align: center;
+      margin: 10px 0;
+      font-size: 24px;
     }
-    .pdf-box {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
+
     iframe {
-      width: 100%;
-      max-width: 900px;
-      height: 800px;
+      display: block;
+      width: 100vw;
+      height: calc(100vh - 50px); /* タイトル分引く */
       border: none;
     }
   </style>
 </head>
 <body>
-  <h1>サウナの使い方 PDF</h1>
-  <div class="pdf-box">
-    <iframe src="sauna_howtouse.pdf"></iframe>
-  </div>
+  <h1>サウナの使い方</h1>
+  <iframe src="sauna_howtouse.pdf"></iframe>
 </body>
 </html>
